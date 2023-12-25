@@ -83,7 +83,7 @@ const App = () => {
 
   return (
     <div>
-      <h1 id="center" style={{backgroundColor: " blue"}}>UseReducer</h1>
+      <h1 id="center" style={{backgroundColor: "white"}}>UseReducer</h1>
 
       {/* Display products */}
       <div className="products-container">
