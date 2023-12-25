@@ -1,5 +1,3 @@
-// App.js
-
 import React, { useState } from 'react';
 import './App.css';
 
@@ -85,7 +83,7 @@ const App = () => {
 
   return (
     <div>
-      <h1 id="center">E-commerce Cart Management System</h1>
+      <h1 id="center" style={{backgroundColor: " blue"}}>UseReducer</h1>
 
       {/* Display products */}
       <div className="products-container">
@@ -103,7 +101,7 @@ const App = () => {
         {cart.map((item) => (
           <CartItem key={item.id} item={item} removeFromCart={removeFromCart} />
         ))}
-        <p>Total: ${calculateTotal().toFixed(2)}</p>
+        <p style={{marginLeft : "10px"}}>Total: ${calculateTotal().toFixed(2)}</p>
         <button onClick={clearCart}>Clear Cart</button>
       </div>
     </div>
